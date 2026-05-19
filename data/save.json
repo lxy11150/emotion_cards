@@ -1,0 +1,231 @@
+{
+  "screen": "battle",
+  "storyIndex": 2,
+  "playerHp": 50,
+  "levelStartHp": 50,
+  "maxHp": 50,
+  "level": 0,
+  "clearedLevels": [],
+  "monsterHp": 24,
+  "monsterShield": 0,
+  "playerShield": 0,
+  "energy": 2,
+  "turn": 1,
+  "deck": [
+    {
+      "id": "atk-5",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "atk-3",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "atk-0",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "def-11",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "def-10",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "steady-19",
+      "type": "ability",
+      "ability": "steady",
+      "name": "镇定",
+      "pinyin": "zhen ding",
+      "kind": "cure",
+      "target": "surprise",
+      "cost": 1,
+      "color": "#f3bd62",
+      "desc": "消除惊讶。",
+      "baseCost": 1
+    },
+    {
+      "id": "calm-15",
+      "type": "ability",
+      "ability": "calm",
+      "name": "冷静",
+      "pinyin": "leng jing",
+      "kind": "cure",
+      "target": "angry",
+      "cost": 1,
+      "color": "#73c5c6",
+      "desc": "消除愤怒。",
+      "baseCost": 1
+    },
+    {
+      "id": "def-9",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "courage-17",
+      "type": "ability",
+      "ability": "courage",
+      "name": "勇气",
+      "pinyin": "yong qi",
+      "kind": "cure",
+      "target": "fear",
+      "cost": 1,
+      "color": "#d69be8",
+      "desc": "消除恐惧。",
+      "baseCost": 1
+    },
+    {
+      "id": "atk-2",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "def-12",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "joy-14",
+      "type": "ability",
+      "ability": "joy",
+      "name": "快乐",
+      "pinyin": "kuai le",
+      "kind": "joy",
+      "cost": 2,
+      "color": "#f7d34b",
+      "desc": "让攻击和防御翻倍。",
+      "baseCost": 2
+    },
+    {
+      "id": "def-8",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "accept-16",
+      "type": "ability",
+      "ability": "accept",
+      "name": "接纳",
+      "pinyin": "jie na",
+      "kind": "cure",
+      "target": "sad",
+      "cost": 1,
+      "color": "#8eb8e5",
+      "desc": "消除悲伤。",
+      "baseCost": 1
+    }
+  ],
+  "discard": [],
+  "hand": [
+    {
+      "id": "def-13",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "tolerant-18",
+      "type": "ability",
+      "ability": "tolerant",
+      "name": "宽容",
+      "pinyin": "kuan rong",
+      "kind": "cure",
+      "target": "disgust",
+      "cost": 1,
+      "color": "#94d176",
+      "desc": "消除厌恶。",
+      "baseCost": 1
+    },
+    {
+      "id": "def-7",
+      "type": "defense",
+      "name": "防御",
+      "pinyin": "fang yu",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "atk-6",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    },
+    {
+      "id": "atk-4",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    }
+  ],
+  "exhausted": [
+    {
+      "id": "atk-1",
+      "type": "attack",
+      "name": "攻击",
+      "pinyin": "gong ji",
+      "cost": 1,
+      "baseCost": 1
+    }
+  ],
+  "debuffs": [],
+  "joy": false,
+  "bossCooldown": 0,
+  "intent": {
+    "type": "debuff",
+    "emotion": "sad",
+    "label": "施加悲伤"
+  },
+  "tip": {
+    "title": "情绪小精灵",
+    "text": "你好呀！观察怪物意图，再选择卡牌。每回合有3点情绪能量。",
+    "skipTitleInSpeech": true
+  },
+  "log": [
+    "攻击造成 6 点伤害。",
+    "开始挑战泪滴怪。",
+    "情绪王国正在等待小勇士。"
+  ],
+  "ended": false,
+  "guidedEmotion": null,
+  "guidedHistory": []
+}
