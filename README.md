@@ -180,14 +180,49 @@ npm run preview
 ```text
 .
 ├── data/
-│   └── save.json        # 本地文件存档
+│   └── save.json              # Express 本地服务使用的文件存档
+├── scripts/
+│   └── remove_paper_bg.py     # 早期图片背景处理辅助脚本
 ├── src/
-│   ├── App.jsx          # 游戏主逻辑、界面与战斗规则
-│   ├── main.jsx         # React 入口
-│   └── styles.css       # 页面样式、动画与卡通角色
+│   ├── App.jsx                # 应用入口编排，负责切换首页、剧情、地图、战斗和结算等页面
+│   ├── main.jsx               # React 挂载入口
+│   ├── styles.css             # 全局样式入口，按模块引入 styles/ 下的样式文件
+│   ├── assets/
+│   │   └── art/               # AI 绘制的剧情、地图、角色、怪物、Boss、战斗背景和卡牌插图
+│   ├── components/
+│   │   ├── Artwork.jsx        # 统一封装角色、怪物、地图、剧情和战斗背景插画
+│   │   ├── GameHeader.jsx     # 游戏内顶部操作区
+│   │   ├── GameUi.jsx         # 血条、能量、卡牌、牌堆、弹窗等通用游戏 UI
+│   │   └── InfoPanels.jsx     # 规则页、规则弹窗、情绪图鉴
+│   ├── game/
+│   │   ├── logic.js           # 关卡推进、怪物意图、战斗状态重置和回合抽牌逻辑
+│   │   ├── data/
+│   │   │   ├── art.js         # 插画资源映射
+│   │   │   └── content.js     # 情绪、能力牌、怪物、剧情和规则文案
+│   │   ├── hooks/
+│   │   │   └── useEmotionGame.js # 游戏状态、出牌、回合结束、存档和语音提示
+│   │   └── utils/
+│   │       ├── deck.js        # 牌库、抽牌、洗牌、费用恢复和惊讶混乱费用机制
+│   │       ├── storage.js     # localStorage 与服务端存档 API
+│   │       ├── text.js        # 拼音 ruby 与语音文本辅助
+│   │       └── voice.js       # 中文语音选择
+│   ├── screens/
+│   │   ├── HomeScreen.jsx     # 首页
+│   │   ├── StoryScreen.jsx    # 初次进入游戏的背景剧情
+│   │   ├── MapScreen.jsx      # 情绪王国地图与关卡节点
+│   │   ├── MonsterIntroScreen.jsx # 怪物介绍与挑战入口
+│   │   ├── BattleScreen.jsx   # Slay the Spire 风格战斗界面
+│   │   └── VictoryScreen.jsx  # 通关结算页
+│   └── styles/
+│       ├── base.css           # 基础排版、按钮、弹窗、徽章等通用样式
+│       ├── app-shell.css      # 首页、游戏外壳、规则页和图鉴布局
+│       ├── screens.css        # 剧情、地图、介绍页和胜利页样式
+│       ├── battle.css         # 战斗舞台、手牌、牌堆、血条和战斗动效
+│       └── art.css            # 插画、角色、怪物和 fallback CSS 形象样式
 ├── index.html
 ├── package.json
-└── server.cjs           # Express + Vite 本地服务与存档 API
+├── vite.config.js             # Vite 配置
+└── server.cjs                 # Express + Vite 本地服务与存档 API
 ```
 
 ## 适用方向
